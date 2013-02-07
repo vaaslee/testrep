@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+import os
+#
+#
+def echo(word):
+	word=str(word)
+	print word
+#
+com=raw_input()
+if com=="echo":
+	echo()
+
