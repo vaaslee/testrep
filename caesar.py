@@ -4,6 +4,20 @@ def tocrypte(s,k):
 	#alphabet = list of English letters
 	if s == " ":
 		return " "
+	if s == ",":
+		return ","
+	if s == ".":
+		return "."
+	if s == "!":
+		return "!"
+	if s == "?":
+		return "?"
+	if s == "-":
+		return "-"
+	if s == ":":
+		return ":"
+	if s == ";":
+		return ";"
 	alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',]
 	#ind = index of character
 	ind = alphabet.index(s) + k
@@ -18,7 +32,8 @@ def tocrypte(s,k):
 
 #word = our word
 word = raw_input("Type the word you want to encrypt(enter /exit to close the program):")
-key = input("Type the key:")
+if word != "/exit":
+	key = input("Type the key:")
 i = 0
 while word != "/exit":
 	result = []
